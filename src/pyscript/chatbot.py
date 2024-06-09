@@ -32,7 +32,7 @@ def rule(file_path):
     return fixmycrack_info
 
 def send_email(subject, message, sender_email, receiver_email):
-    password = 'wfpk dngg djpd lsll'
+    password = #Your password comes here
      
     # Create a MIMEText object
     msg = MIMEText(message)
