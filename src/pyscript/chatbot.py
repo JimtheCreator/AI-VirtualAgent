@@ -131,8 +131,5 @@ def chat_response(You):
     else:
         return CustomChatGPT(You)
 
-demo = gr.Interface(fn=chat_response, inputs="text", outputs="text", title="FixMyCrack Assistant")
-demo.launch()
-
-
-
+# demo = gr.Interface(fn=chat_response, inputs="text", outputs="text", title="FixMyCrack Assistant")
+# demo.launch()
