@@ -5,37 +5,6 @@ import json
 # Using a simplified tokenization approximation: splitting by whitespace and punctuation
 import re
 
-# Load the csv file
-# df = pd.read_csv('products.csv')
-
-# api_key = "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"
-
-# client = OpenAI(api_key=api_key)
-
-# messages = [{"role": "assistant", "content": f"You are the FixMyCrack Assistant. Your answer should be based on the {df}."}]
-
-# def CustomChatGPT(You):
-#     messages.append({"role": "user", "content": You})
-#     response = client.chat.completions.create(
-#         model="gpt-3.5-turbo",
-#         messages=messages
-#     )
-    
-#     chatgpt_reply = response.choices[0].message.content
-
-#     # Check if the reply contains any product or service from the csv file
-#     for index, row in df.iterrows():
-#         if row['PRODUCT'].lower() in chatgpt_reply or row['SERVICE'].lower() in chatgpt_reply:
-#             # If it does, append the corresponding quote to the reply
-#             chatgpt_reply += '\n' + row['QUOTES']
-
-#     messages.append({"role": "assistant", "content": chatgpt_reply})
-#     return chatgpt_reply
-
-
-# demo = gr.Interface(fn=CustomChatGPT, inputs="text", outputs="text", title="FixMyCrack Assistant")
-
-# demo.launch(share=True)
 
 theBrainBase = pd.read_csv('products.csv')
 
